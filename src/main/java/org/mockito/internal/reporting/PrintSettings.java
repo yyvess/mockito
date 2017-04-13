@@ -17,7 +17,7 @@ import java.util.List;
 
 public class PrintSettings {
 
-    public static final int MAX_LINE_LENGTH = 45;
+    private static final int MAX_LINE_LENGTH = 45;
     private boolean multiline;
     private List<Integer> withTypeInfo = new LinkedList<Integer>();
 

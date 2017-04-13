@@ -17,7 +17,7 @@ import java.util.Set;
  */
 class StubbingArgMismatches {
 
-    final Map<Invocation, Set<Invocation>> mismatches = new LinkedHashMap<Invocation, Set<Invocation>>();
+    private final Map<Invocation, Set<Invocation>> mismatches = new LinkedHashMap<Invocation, Set<Invocation>>();
 
     public void add(Invocation invocation, Invocation stubbing) {
         Set<Invocation> matchingInvocations = mismatches.get(stubbing);

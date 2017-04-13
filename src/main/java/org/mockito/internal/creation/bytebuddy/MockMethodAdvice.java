@@ -28,7 +28,7 @@ import java.util.concurrent.Callable;
 
 public class MockMethodAdvice extends MockMethodDispatcher {
 
-    final WeakConcurrentMap<Object, MockMethodInterceptor> interceptors;
+    private final WeakConcurrentMap<Object, MockMethodInterceptor> interceptors;
 
     private final String identifier;
 

@@ -26,7 +26,7 @@ public class DefaultInternalRunner implements InternalRunner {
     public DefaultInternalRunner(Class<?> testClass, final Supplier<MockitoTestListener> listenerSupplier) throws InitializationError {
         runner = new BlockJUnit4ClassRunner(testClass) {
 
-            public Object target;
+            private Object target;
             private MockitoTestListener mockitoTestListener;
 
             protected Statement withBefores(FrameworkMethod method, Object target, Statement statement) {

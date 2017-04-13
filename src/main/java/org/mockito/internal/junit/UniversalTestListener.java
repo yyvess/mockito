@@ -24,7 +24,7 @@ public class UniversalTestListener implements MockitoTestListener {
     private final MockitoLogger logger;
 
     private Map<Object, MockCreationSettings> mocks = new IdentityHashMap<Object, MockCreationSettings>();
-    private DefaultStubbingLookupListener stubbingLookupListener;
+    private final DefaultStubbingLookupListener stubbingLookupListener;
 
     public UniversalTestListener(Strictness initialStrictness, MockitoLogger logger) {
         this.currentStrictness = initialStrictness;

@@ -43,7 +43,7 @@ public class MockUtil {
     }
 
     public static <T> void resetMock(T mock) {
-        InternalMockHandler oldHandler = (InternalMockHandler) getMockHandler(mock);
+        InternalMockHandler oldHandler = getMockHandler(mock);
         MockCreationSettings settings = oldHandler.getMockSettings();
         MockHandler newHandler = createMockHandler(settings);
 

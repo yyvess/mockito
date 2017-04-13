@@ -25,7 +25,7 @@ class PluginRegistry {
     private final InstantiatorProvider instantiatorProvider = new PluginLoader(pluginSwitch)
             .loadPlugin(InstantiatorProvider.class, "org.mockito.internal.creation.instance.DefaultInstantiatorProvider");
 
-    private AnnotationEngine annotationEngine = new PluginLoader(pluginSwitch)
+    private final AnnotationEngine annotationEngine = new PluginLoader(pluginSwitch)
             .loadPlugin(AnnotationEngine.class, "org.mockito.internal.configuration.InjectingAnnotationEngine");
 
     /**

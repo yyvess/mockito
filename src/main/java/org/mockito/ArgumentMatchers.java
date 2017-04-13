@@ -1089,7 +1089,7 @@ public class ArgumentMatchers {
      */
     public static <T> T nullable(Class<T> clazz) {
         AdditionalMatchers.or(isNull(), isA(clazz));
-        return  (T) Primitives.defaultValue(clazz);
+        return Primitives.defaultValue(clazz);
     }
 
     /**

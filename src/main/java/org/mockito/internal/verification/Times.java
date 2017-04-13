@@ -19,7 +19,7 @@ import org.mockito.verification.VerificationMode;
 
 public class Times implements VerificationInOrderMode, VerificationMode {
 
-    final int wantedCount;
+    private final int wantedCount;
 
     public Times(int wantedNumberOfInvocations) {
         if (wantedNumberOfInvocations < 0) {

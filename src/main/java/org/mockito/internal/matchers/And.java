@@ -11,8 +11,8 @@ import org.mockito.ArgumentMatcher;
 
 @SuppressWarnings({ "unchecked", "serial","rawtypes" })
 public class And implements ArgumentMatcher<Object>, Serializable {
-    private ArgumentMatcher m1;
-    private ArgumentMatcher m2;
+    private final ArgumentMatcher m1;
+    private final ArgumentMatcher m2;
 
     public And(ArgumentMatcher<?> m1, ArgumentMatcher<?> m2) {
         this.m1 = m1;

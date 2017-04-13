@@ -10,9 +10,9 @@ import java.lang.reflect.Field;
 
 public class FieldReader {
 
-    final Object target;
-    final Field field;
-    final AccessibilityChanger changer = new AccessibilityChanger();
+    private final Object target;
+    private final Field field;
+    private final AccessibilityChanger changer = new AccessibilityChanger();
 
     public FieldReader(Object target, Field field) {
         this.target = target;

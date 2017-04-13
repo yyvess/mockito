@@ -13,7 +13,7 @@ package org.mockito.internal.util.concurrent;
  */
 public class DetachedThreadLocal<T> implements Runnable {
 
-    final WeakConcurrentMap<Thread, T> map;
+    private final WeakConcurrentMap<Thread, T> map;
 
     public DetachedThreadLocal(Cleaner cleaner) {
         switch (cleaner) {

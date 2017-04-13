@@ -16,7 +16,7 @@ import org.mockito.verification.VerificationMode;
 
 public class AtLeast implements VerificationInOrderMode, VerificationMode {
 
-    final int wantedCount;
+    private final int wantedCount;
 
     public AtLeast(int wantedNumberOfInvocations) {
         if (wantedNumberOfInvocations < 0) {

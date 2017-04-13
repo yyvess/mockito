@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class InstanceOf implements ArgumentMatcher<Object>, Serializable {
 
     private final Class<?> clazz;
-    private String description;
+    private final String description;
 
     public InstanceOf(Class<?> clazz) {
         this(clazz, "isA(" + clazz.getCanonicalName() + ")");

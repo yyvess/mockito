@@ -16,7 +16,7 @@ import java.util.Map;
  */
 public class WeakConcurrentSet<V> implements Runnable, Iterable<V> {
 
-    final WeakConcurrentMap<V, Boolean> target;
+    private final WeakConcurrentMap<V, Boolean> target;
 
     public WeakConcurrentSet(Cleaner cleaner) {
         switch (cleaner) {

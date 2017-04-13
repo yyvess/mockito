@@ -10,7 +10,7 @@ import org.mockito.invocation.Invocation;
 
 public class InOrderContextImpl implements InOrderContext {
 
-    final IdentitySet verified = new IdentitySet();
+    private final IdentitySet verified = new IdentitySet();
 
     public boolean isVerified(Invocation invocation) {
         return verified.contains(invocation);

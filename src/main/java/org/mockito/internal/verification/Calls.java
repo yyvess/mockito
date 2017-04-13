@@ -19,7 +19,7 @@ import org.mockito.verification.VerificationMode;
 
 public class Calls implements VerificationMode, VerificationInOrderMode {
 
-    final int wantedCount;
+    private final int wantedCount;
 
     public Calls(int wantedNumberOfInvocations) {
         if( wantedNumberOfInvocations <= 0 ) {
